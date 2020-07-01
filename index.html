@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Application</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Norican&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+
+	</head>
+
+	<body>
+        
+<div class="main">
+<h1>Welcome every body ^_^</h1>
+			<div class="" id ="">
+               </div>
+    
+<button id="myBtn">Try it</button>
+
+
+<p id="demo"></p>
+
+        
+<table style="width:100%" id="table" border="1">
+  <tr class="tr1">
+     <td id="ggg"></td>
+    <td id="ggg"></td>
+    <td id="ggg"></td>
+  </tr>
+  <tr class="td2">
+    <td id="ggg"></td>
+    <td id="ggg"></td>
+    <td id="ggg"></td>
+  </tr>
+  <tr>
+    <td id="ggg"></td>
+    <td id="ggg"></td>
+    <td id="ggg"></td>
+  </tr>
+</table>        
+        
+<P> BY : </P>
+    <P> Mohammed Al-Balbisi  ^_^ </P>
+    
+		</div>
+
+		<script src="JavaScript.js"></script>
+		<script src="sty.js"></script>
+<script>
+ // var table = document.getElementById("table");
+  //  table.rows[i].cells[j].onclick = function()
+                 
+    
+//document.getElementsByTagName("td")[0].addEventListener("click", function(){
+ // document.getElementById("ggg").innerHTML = "x";
+
+    var table = document.getElementById("table");
+    
+    var rIndex,cIndex;
+            
+            // table rows
+            for(var i = 0; i < table.rows.length; i++)
+            {
+                // row cells
+                for(var j = 0; j < table.rows[i].cells.length; j++)
+                {
+                    table.rows[i].cells[j].addEventListener("click", function(){
+                 
+                 
+                       
+                        //table.rows[i].cells[j].innerHTML = "x";
+                        //  document.getElementsByTagName("td")[i].innerHTML = "x";
+                       // table.rows[i].cells[j].innerHTML = "x";
+                       // document.getElementsByTagName("td")[1][2].innerHTML = "x";
+                        document.getElementById("table").rows[this.parentElement.rowIndex].cells[this.cellIndex].innerHTML="x";
+                        
+                    // document.getElementById("ggg").innerHTML = "x";
+
+                });
+            }}
+    
+    
+    
+</script>
+	</body>
+</html>
